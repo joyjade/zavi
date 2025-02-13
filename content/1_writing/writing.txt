@@ -1,0 +1,25 @@
+Title: writing
+
+----
+
+Poetry:
+
+- 
+  title: ' “White Skin, Black Fuel: Author Q&A with Andreas Malm” -  '
+  link: >
+    https://politicalresearch.org/2021/11/12/white-skin-black-fuel
+  publisher: Political Research Associates
+  date: 2026-09-20 00:00:00
+  street: null
+
+----
+
+Essays: 
+
+----
+
+Other: 
+
+----
+
+Uuid: XBMnpk2cGHpbvFMg

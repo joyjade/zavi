@@ -1,0 +1,56 @@
+title: Writing
+icon: 📖
+
+columns:
+  - width: 3/3
+    fields:
+      poetry: 
+        label: Poetry
+        type: structure
+        fields:
+          title:
+            label: title
+            type: text
+          link:
+            label: link
+            type: url
+          publisher:
+            label: Publisher
+            type: text
+          date:
+            label: date
+            type: text
+      essays:   
+        label: Essay
+        type: structure
+        fields:
+          street:
+            title: title
+            type: text
+          link:
+            label: link
+            type: url
+          publisher:
+            label: publisher
+            type: text
+          date:
+            label: date
+            type: date
+            display: DD.MM.YYYY
+      other:   
+        label: Other
+        type: structure
+        fields:
+          street:
+            title: title
+            type: text
+          link:
+            label: link
+            type: url
+          publisher:
+            label: publisher
+            type: text
+          date:
+            label: date
+            type: date
+            display: DD.MM.YYYY

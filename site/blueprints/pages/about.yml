@@ -1,0 +1,19 @@
+title: About
+icon: 🌸
+
+columns:
+  - width: 2/3
+    fields:
+      text:
+        label: About
+        type: textarea
+      email: 
+        label: Links 
+        type: email
+      
+  - width: 1/3
+    fields: 
+      photo:
+          type: files
+          uploads: files-upload
+

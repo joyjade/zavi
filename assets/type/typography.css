@@ -1,0 +1,29 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'Hershey Noailles Times';
+    src: url('Hershey-Noailles-Times-Duplex-Regular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey Noailles Times';
+    src: url('Hershey-Noailles-Times-Duplex-Italic-Regular.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hershey Noailles Times';
+    src: url('Hershey-Noailles-Times-Duplex-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Hershey Noailles";
+    src: url('./Hershey-Noailles-times.woff');
+}
+
+@font-face {
+    font-family: "Hershey Noailles Futura";
+    src: url('./Hershey-Noailles-Futura-Triplex-Regular.otf');
+}
