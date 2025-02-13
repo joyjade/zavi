@@ -1,5 +1,3 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
-
 # Zavi
 A website for Zavi Kang Engles built on Kirby. Please be nice to me. I haven't coded in a moment. 
 
