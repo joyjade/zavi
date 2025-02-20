@@ -1,7 +1,9 @@
 <?php snippet('nav') ?>
 <div class="content">
   <div class="about">
-    <?= $page->text() ?>  
+    <p>
+      <?= $page->text() ?>  
+    </p>
   </div>
 </div>
 <?php snippet('footer') ?>

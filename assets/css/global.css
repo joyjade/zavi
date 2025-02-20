@@ -38,11 +38,11 @@ a {
 img {
   width: 100%;
 } 
-  
-p {
-  font-size: var(--body-text);
-}
+
 */
+p {
+  font-size: 1.8rem;
+}
 
 
 /* LAYOUT */
@@ -54,7 +54,8 @@ body {
   padding: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 5fr 1fr;
+  height: 100vh;
 }
 
 .header{
@@ -119,4 +120,58 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   line-height: 1.1;
   font-style: normal;
+}
+
+.landing {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-img {
+  padding: 0.5rem;
+  border: 2px solid var(--secondary-color);
+  max-height: 300px;
+}
+
+.landing a {
+  position: relative;
+  line-height: 0;
+}
+
+.landing a:hover {
+  background-color: var(--secondary-color);
+}
+
+.landing figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+  color: white;
+  line-height: 1;
+  padding: 7px 10px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: 'Hershey Noailles Futura';
+  font-size: 1rem;
+}
+
+.writing {
+  margin-right: 1rem;
+}
+.writing li {
+  margin-bottom: 1rem;
+}
+
+.writing a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.writing a:hover {
+  color: var(--secondary-color)
 }
