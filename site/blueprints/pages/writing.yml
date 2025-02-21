@@ -24,19 +24,18 @@ columns:
         label: Essay
         type: structure
         fields:
-          street:
-            title: title
+          title:
+            label: title
             type: text
           link:
             label: link
             type: url
           publisher:
-            label: publisher
+            label: Publisher
             type: text
           date:
             label: date
-            type: date
-            display: DD.MM.YYYY
+            type: text
       other:   
         label: Other
         type: structure
