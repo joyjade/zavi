@@ -5,6 +5,7 @@
  --display-font: 'Hershey Noailles';
  --primary-color: #FFF8F3;
  --secondary-color: #FF0000;
+  --thin-border: 1.5px solid var(--secondary-color)
 }
 
 /* RESETS */
@@ -40,8 +41,8 @@ img {
 } 
 
 */
-p {
-  font-size: 1.8rem;
+p, .content li {
+  font-size: 1.7rem;
 }
 
 
@@ -129,10 +130,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* PAGES */
-.about {
-  font-size: 1.5rem;
+.content {
+  padding-right: 2rem;
+}
+
+.about p, .research p, .research li, .about li {
   line-height: 1.1;
   font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+.about ul, .research ul {
+  list-style: inside;
+}
+
+.research img {
+  max-width: 150px;
+  border: var(--thin-border);
+  padding: 0.35rem;
+  max-height: 300px;
+  margin-top: 1rem;
+}
+
+.profile {
+  margin-top: 2rem;
+  border: var(--thin-border);
+  padding: 0.5rem;
+  max-height: 300px;
 }
 
 .landing {
@@ -145,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-img {
   padding: 0.5rem;
-  border: 1.5px solid var(--secondary-color);
+  border: var(--thin-border);
   max-height: 300px;
 }
 
@@ -169,24 +193,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing {
-  margin-right: 1rem;
   margin-bottom: 2.4rem;
 }
 .writing li {
   margin-bottom: 1rem;
 }
 
-.writing a {
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 4px;
+.content a {
+  text-decoration: none;
 }
 
 .writing span.publisher {
   font-style: italic;
 }
 
-.writing a:hover {
+.content a:hover .link_title, .research a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
   text-decoration-color: var(--secondary-color)
 }
 
