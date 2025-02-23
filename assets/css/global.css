@@ -56,6 +56,8 @@ body {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 5fr 1fr;
   height: 100vh;
+
+  overflow: hidden;
 }
 
 .header{
@@ -91,10 +93,16 @@ nav li {
 
 nav a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  text-decoration-color:var(--secondary-color);
 }
 
 nav a.active {
-  color:var(--secondary-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  text-decoration-color:var(--secondary-color);
 }
 
 /* TYPOGRAPHY */
@@ -108,15 +116,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .blur {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   opacity: 0;
   border-radius: 50%;
   background-color: #FFE2E7;
   pointer-events: none;
   filter: blur(30px);
-  transition: transform 0.1s ease, opacity 1s ease;
+  transition: opacity 1s ease;
   z-index: -100;
+  will-change: transform;
 }
 
 /* PAGES */
@@ -136,32 +145,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-img {
   padding: 0.5rem;
-  border: 2px solid var(--secondary-color);
+  border: 1.5px solid var(--secondary-color);
   max-height: 300px;
 }
 
-.landing a {
-  position: relative;
-  line-height: 0;
+.landing a:hover figcaption {
+  color: var(--secondary-color);
 }
-
-.landing a:hover {
-  background-color: var(--secondary-color);
-}
-
 .landing figcaption {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
-  background-color: var(--secondary-color);
-  color: white;
+  right: 0; */
+  /* background-color: var(--secondary-color);
+  color: white; */
   line-height: 1;
-  padding: 7px 10px;
+  text-align: center;
+  padding: 10px;
   padding-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-family: 'Hershey Noailles Futura';
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .writing {
@@ -173,12 +177,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing a {
-  font-style: italic;
   text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+
+.writing span.publisher {
+  font-style: italic;
 }
 
 .writing a:hover {
-  color: var(--secondary-color)
+  text-decoration-color: var(--secondary-color)
 }
 
 .writing h3 {

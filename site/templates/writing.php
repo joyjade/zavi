@@ -1,22 +1,10 @@
 <?php snippet('nav') ?>
 <div class="content">
   <ul class="flex writing">
-    <h3>Poetry</h3>
-    <?php foreach(  $page-> poetry() -> toStructure() as $poetry ): ?> 
-      <li>
-        <p>“<a href="<?=$poetry -> link() ?>"><?=$poetry -> title()?></a>,” ⟶
-        <?=$poetry -> publisher() ?> (<?=$poetry -> date() ?>)</p>
-      </li>
-      <?php endforeach ?>
-    </ul>
+    <?php snippet('link_item', ['header' => 'poetry', 'section' => $page-> poetry()]) ?>
+  </ul>
   <ul class="flex writing">
-    <h3>Essays</h3>
-    <?php foreach(  $page-> essays() -> toStructure() as $essay ): ?> 
-      <li>
-        <p>“<a href="<?=$essay -> link() ?>"><?=$essay -> title()?></a>,” ⟶
-        <?=$essay -> publisher() ?></p>
-      </li>
-    <?php endforeach ?>
+    <?php snippet('link_item', ['header' => 'essays', 'section' => $page-> essays()]) ?>
   </ul>
 </div>
 <?php snippet('footer') ?>
