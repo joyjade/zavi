@@ -1,55 +1,24 @@
 title: Writing
 icon: 🖋
 
+options: 
+  changeTitle: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  move: false
+
+
 columns:
   - width: 3/3
     fields:
       poetry: 
+        extends: fields/writing
         label: Poetry
-        type: structure
-        fields:
-          title:
-            label: title
-            type: text
-          link:
-            label: link
-            type: url
-          publisher:
-            label: Publisher
-            type: text
-          date:
-            label: date
-            type: text
       essays:   
-        label: Essay
-        type: structure
-        fields:
-          title:
-            label: title
-            type: text
-          link:
-            label: link
-            type: url
-          publisher:
-            label: Publisher
-            type: text
-          date:
-            label: date
-            type: text
+        extends: fields/writing
+        label: Essays
       other:   
+        extends: fields/writing
         label: Other
-        type: structure
-        fields:
-          street:
-            title: title
-            type: text
-          link:
-            label: link
-            type: url
-          publisher:
-            label: publisher
-            type: text
-          date:
-            label: date
-            type: date
-            display: DD.MM.YYYY

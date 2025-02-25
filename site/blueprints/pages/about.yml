@@ -1,20 +1,29 @@
 title: About
 icon: 🌸
 
-columns:
-  - width: 2/3
-    fields:
-      text:
-        label: About
-        type: textarea
-      email: 
-        label: Links 
-        type: email
-      
-  - width: 1/3
+options:
+  changeTitle: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  move: false
+
+columns:     
+  - width: 1/4
     fields: 
       photo:
         type: files
         uploads:
           template: files-upload
+        max: 1
+        layout: cards
+        text: "alt: {{ file.alt }}"
+        info: "{{ file.credit }}"
+
+  - width: 3/4
+    fields:
+      text:
+        label: About
+        type: textarea
 

@@ -1,0 +1,13 @@
+Title: First Book
+
+----
+
+Blurb: 
+
+----
+
+Cover: 
+
+----
+
+Uuid: logA12aN37Ni24pd

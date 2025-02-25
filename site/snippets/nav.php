@@ -27,4 +27,3 @@
       <?php endforeach ?>
     </ul>
 	</nav>
-  <div class="blur"></div>

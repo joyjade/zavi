@@ -1,5 +1,57 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+options: 
+  changeTitle: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  move: false
+
+tabs: 
+  writing: 
+    label: Main Site
+    icon: book
+    columns:
+      left: 
+        width: 2/3
+        sections:
+          main: 
+            type: pages
+            label: Pages
+            status: listed
+            info: "{{ page.slug }}"
+            image:
+              back: pink
+              cover: true
+      right:
+        width: 1/3
+        sections: 
+            drafts:
+              type: pages
+              label: Not Live
+              status: drafts
+              templates: 
+                - books
+              image:
+                back: green
+                color: white
+                cover: true
+  landing: 
+    label: Landing
+    icon: palette
+    sections:
+      fields: 
+        label: GIF
+        type: files
+        template: landing
+        layout: cards
+        max: 1
+        info: "alt: {{ file.alt }}"
+        
+
+
+
+  
+    
+
