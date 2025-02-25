@@ -14,7 +14,7 @@
 
 <?php $afterpage = page('writing'); ?>
 
-<body class="">
+<body class="home_landing">
   <div class="header">
     <div class="title">
       <a href="<?= $site->url() ?>"><?= $site->title() ?></a>

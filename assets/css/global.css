@@ -57,11 +57,19 @@ body {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 5fr 1fr;
   height: 100vh;
-
   overflow: hidden;
+  overflow-y: auto;
+
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  overflow: -moz-scrollbars-none;
 }
 
-.header{
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
   grid-row: 1/2;
   grid-column: 1/3;
   padding-bottom: 4rem;
@@ -70,6 +78,7 @@ body {
 .content{
   grid-row: 2/3;
   grid-column: 2/3;
+  /* overflow: auto; */
 }
 
 .title {
@@ -85,6 +94,9 @@ nav {
   text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
+
+  position: sticky;
+  top: 20;
 }
 
 nav li {
@@ -144,19 +156,40 @@ h1, h2, h3, h4, h5, h6 {
   list-style: inside;
 }
 
+.about, .book {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.about .photo-col, .book .photo-col {
+  margin-right: 2.5rem;
+  max-width: 300px;
+}
+
+.photo-col img {
+  object-fit: contain;
+  width: inherit;
+}
+
+.profile {
+  border: var(--thin-border);
+  padding: 0.5rem;
+  max-height: 300px;
+  /* margin-top: 1rem; */
+}
+
+.about figcaption {
+  font-family: var(--nav-font);
+  margin-top: 3px;
+  margin-bottom: 2rem;
+}
+
 .research img {
   max-width: 150px;
   border: var(--thin-border);
   padding: 0.35rem;
   max-height: 300px;
   margin-top: 1rem;
-}
-
-.profile {
-  margin-top: 2rem;
-  border: var(--thin-border);
-  padding: 0.5rem;
-  max-height: 300px;
 }
 
 .landing {
@@ -176,12 +209,8 @@ h1, h2, h3, h4, h5, h6 {
 .landing a:hover figcaption {
   color: var(--secondary-color);
 }
+
 .landing figcaption {
-  /* position: absolute;
-  top: 0;
-  right: 0; */
-  /* background-color: var(--secondary-color);
-  color: white; */
   line-height: 1;
   text-align: center;
   padding: 10px;
@@ -214,11 +243,44 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-color: var(--secondary-color)
 }
 
-.writing h3 {
+.writing h3, .book h3 {
   font-family: var(--nav-font);
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 1.5px;
   
   margin-bottom: 1rem;
+}
+
+.book h2 {
+  font-size: 2rem;
+  font-family: var(--display-font);
+  padding-bottom: 2rem;
+}
+
+.book p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.book h3 {
+ margin-top: 3rem; 
+}
+
+.book .button {
+  display: flex;
+  border: var(--thin-border);
+  font-family: var(--nav-font);
+  justify-content: center;
+  padding: 12px 15px 5px;
+  line-height: 1;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  color: var(--secondary-color)
+}
+
+.book .button:hover{
+  --secondary-color: black;
 }

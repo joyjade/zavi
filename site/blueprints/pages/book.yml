@@ -10,6 +10,11 @@ columns:
         multiple: false
         headline: Book Cover
         layout: cards
+      link_label:
+        type: text
+        label: Link Text
+      url: 
+        type: url
   right:
     width: 2/3
     fields: 
@@ -17,8 +22,12 @@ columns:
         label: Book Title
         type: text
       summary: 
-          label: Summary
-          type: textarea
+        label: Summary
+        type: textarea
+      blurb_header:
+        label: Blurb Header
+        type: text
+        default: Praise 
       blurb: 
           label: Blurb
           type: textarea
