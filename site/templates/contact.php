@@ -1,5 +1,5 @@
 <?php snippet('nav') ?>
-    <main class="main">
+    <div class="content contact">
         <h1><?= $page->title()->html() ?></h1>
 
         <?php if($success): ?>
@@ -31,14 +31,14 @@
             </div>
             <div class="field">
                 <label for="text">
-                    Text <abbr title="required">*</abbr>
+                    Message <abbr title="required">*</abbr>
                 </label>
                 <textarea id="text" name="text" required>
                     <?= esc($data['text'] ?? '') ?>
                 </textarea>
                 <?= isset($alert['text']) ? '<span class="alert error">' . esc($alert['text']) . '</span>' : '' ?>
             </div>
-            <input type="submit" name="submit" value="Submit">
+            <input class="button" type="submit" name="submit" value="Submit">
         </form>
         <?php endif ?>
     </main>
