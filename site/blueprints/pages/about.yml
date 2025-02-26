@@ -25,4 +25,6 @@ columns:
       text:
         label: About
         type: textarea
+      contact:
+        type: pages 
 

@@ -18,12 +18,22 @@
       <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
     </div>
   </div>
+
 	<nav>
     <ul class="nav">
-      <?php foreach ($site->children()->listed() as $item): ?>
+      <?php foreach ($site->children()->listed() as $item): 
+        ?>
         <li>
-          <a <?php e($item->isOpen(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+          <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
         </li>
+        <?php 
+            if($item->isOpen() and $item->hasChildren()): 
+              $subitem = $item->children()->first();
+              ?>
+              <li class="subitem">
+                <a <?php e($subitem->isOpen(), 'class="active"') ?> href="<?= $subitem->url()?>"><?= $subitem->title()?></a>
+              </li>
+          <?php endif ?> 
       <?php endforeach ?>
     </ul>
-	</nav>
+</nav>

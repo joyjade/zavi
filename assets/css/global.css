@@ -104,6 +104,11 @@ nav li {
   margin-bottom: 1.1rem;
 }
 
+nav li.subitem {
+  margin-left: 1.1rem;
+}
+
+
 nav a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
