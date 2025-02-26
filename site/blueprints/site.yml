@@ -46,7 +46,7 @@ tabs:
         type: files
         template: landing
         layout: cards
-        max: 1
+        multiple: false
         info: "alt: {{ file.alt }}"
         
 

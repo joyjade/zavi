@@ -10,6 +10,7 @@ columns:
         multiple: false
         headline: Book Cover
         layout: cards
+        template: cover
       link_label:
         type: text
         label: Link Text
