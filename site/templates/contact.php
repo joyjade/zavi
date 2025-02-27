@@ -1,46 +1,48 @@
 <?php snippet('nav') ?>
-    <div class="content contact">
+  <div class="content contact">
         <h1><?= $page->title()->html() ?></h1>
 
-        <?php if($success): ?>
-        <div class="alert success">
-            <p><?= $success ?></p>
-        </div>
-        <?php else: ?>
-        <?php if (isset($alert['error'])): ?>
-            <div><?= $alert['error'] ?></div>
-        <?php endif ?>
-        <form method="post" action="<?= $page->url() ?>">
-            <div class="honeypot">
-                <label for="website">Website <abbr title="required">*</abbr></label>
-                <input type="url" id="website" name="website" tabindex="-1">
-            </div>
-            <div class="field">
-                <label for="name">
-                    Name <abbr title="required">*</abbr>
-                </label>
-                <input type="text" id="name" name="name" value="<?= esc($data['name'] ?? '', 'attr') ?>" required>
-                <?= isset($alert['name']) ? '<span class="alert error">' . esc($alert['name']) . '</span>' : '' ?>
-            </div>
-            <div class="field">
-                <label for="email">
-                    Email <abbr title="required">*</abbr>
-                </label>
-                <input type="email" id="email" name="email" value="<?= esc($data['email'] ?? '', 'attr') ?>" required>
-                <?= isset($alert['email']) ? '<span class="alert error">' . esc($alert['email']) . '</span>' : '' ?>
-            </div>
-            <div class="field">
-                <label for="text">
-                    Message <abbr title="required">*</abbr>
-                </label>
-                <textarea id="text" name="text" required>
-                    <?= esc($data['text'] ?? '') ?>
-                </textarea>
-                <?= isset($alert['text']) ? '<span class="alert error">' . esc($alert['text']) . '</span>' : '' ?>
-            </div>
-            <input class="button" type="submit" name="submit" value="Submit">
-        </form>
-        <?php endif ?>
-    </main>
+        <?php if($page->message()->isNotEmpty()): ?> 
+          <div class="alert success">
+            <p><?= $page->message() ?></p>
+          </div>  
+          <a class="crumb" href="<?= url('about/contact')?>"><span class="back-arrow">←</span> Back to form </a>
 
+        <?php else: ?>  
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="<?= $page->secret() ?>">
+
+          <!-- Subject Line -->
+          <input type="hidden" name="subject" value="<?= $page->subject()?>">
+          <input type="hidden" name="from_name" value="Zavi Website Form">
+
+          <!-- Form Inputs -->
+          <div class="field">
+            <label for="name">Name <abbr title="required">*</abbr></label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email <abbr title="required">*</abbr></label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="text">
+                Message <abbr title="required">*</abbr>
+            </label>
+            <textarea name="message" required></textarea>
+          </div>
+
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- Custom Confirmation / Success Page -->
+          <input type="hidden" name="redirect" value="<?= url('about/thanks')?>/">
+
+          <button type="submit" class="button">Submit Form</button>
+
+          </form>
+      <?php endif ?>
+  </div>
 <?php snippet('footer') ?>

@@ -348,3 +348,25 @@ abbr[title] {
 .contact .field:last-of-type {
   padding-bottom: 0.7rem;
 }
+
+.contact .alert.success {
+  /* border: var(--thin-border);
+  padding: 1rem 1.5rem; */
+  width: 50vw;
+}
+
+.contact .alert.success p, .contact .crumb {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--nav-font);
+  display: block;
+}
+
+.contact .back-arrow {
+  line-height: 0;
+  font-size: 1rem;
+}
+
+.contact .crumb:hover .back-arrow {
+  color: var(--secondary-color);
+}
