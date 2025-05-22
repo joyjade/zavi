@@ -104,12 +104,12 @@ nav {
 
 nav li {
   line-height: 1.5;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 nav li.subitem {
   margin-left: 1.1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 ul.nav ul.sublist {
@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about, .research {
   max-width: 800px;
+  padding-bottom: 3rem;
 }
 
 .about, .book {
@@ -242,12 +243,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+.research figure {
+  margin: 1rem 0;
+}
+
+.research figcaption { 
+  margin-top: 5px;
+}
+
 .research img {
-  max-width: 150px;
+  max-width: 800px;
   border: var(--thin-border);
   padding: 0.35rem;
-  max-height: 300px;
-  margin-top: 1rem;
 }
 
 .landing {

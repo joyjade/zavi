@@ -72,6 +72,10 @@
   .book h2 {
     padding: 1rem 0;
   }
+
+  .research img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 960px) {
