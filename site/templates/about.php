@@ -9,6 +9,13 @@
     </div>
     <div>
       <?= $page->text()->kirbytext() ?> 
+      <br />
+      <?php if($page->hasChildren()):
+          $subpage = $page->children()->first();?>
+        <p class="mobile-only">
+          <a href="<?=$subpage->url()?>" class="red"><?=$subpage->title()?>  ❁✿</a>
+      </p>
+      <?php endif ?>
     </div>
   </div>
 </div>

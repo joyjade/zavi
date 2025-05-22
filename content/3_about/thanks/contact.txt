@@ -1,9 +1,0 @@
-Title: Contact
-
-----
-
-Message: Thank you for reaching out! I will get back to you when I can.
-
-----
-
-Uuid: 7bLEmhWW0v7u5QfV

@@ -15,25 +15,25 @@
 <body class="">
   <div class="header">
     <div class="title">
-      <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
+      <a href="<?= $site->url() ?>">❀ <?= $site->title() ?></a>
     </div>
   </div>
 
 	<nav>
     <ul class="nav">
-      <?php foreach ($site->children()->listed() as $item): 
-        ?>
-        <li>
+      <?php foreach ($site->children()->listed() as $item): ?>
+        <li class="item">
           <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
-        </li>
-        <?php 
-            if($item->isOpen() and $item->hasChildren()): 
-              $subitem = $item->children()->first();
-              ?>
-              <li class="subitem">
-                <a <?php e($subitem->isOpen(), 'class="active"') ?> href="<?= $subitem->url()?>"><?= $subitem->title()?></a>
-              </li>
+          <?php if($item->isOpen() and $item->hasChildren()): ?>
+            <ul class="sublist desktop-only">
+              <?php foreach ($item->children()->listed() as $subitem): ?> 
+                <li class="subitem <?=$subitem->title()?>">
+                  <a <?php e($subitem->isOpen(), 'class="active"') ?> href="<?= $subitem->url()?>"><?= $subitem->title()?></a>
+                </li>
+              <?php endforeach ?>
+              </ul>
           <?php endif ?> 
+        </li>
       <?php endforeach ?>
     </ul>
 </nav>

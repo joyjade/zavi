@@ -45,6 +45,9 @@ p, .content li {
   font-size: 1.7rem;
 }
 
+.mobile-only {
+  display: none;
+}
 
 /* LAYOUT */
 
@@ -106,13 +109,30 @@ nav li {
 
 nav li.subitem {
   margin-left: 1.1rem;
+  margin-top: 1rem;
 }
 
+ul.nav ul.sublist {
+  position: relative;
+}
 
 a:hover, a.active {
   color: var(--secondary-color);
 }
 
+nav a {
+  position: relative;
+  line-height: 1;
+}
+
+nav a:hover::after {
+  content: '❀';
+  position: absolute;
+  right: -35px;
+  font-size: 1.5rem;
+  top: 2px;
+  /* color: ❁ black; */
+}
 /* nav a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
@@ -266,6 +286,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 100;
   letter-spacing: 0px;
+}
+
+.writing li a {
+  position: relative;
+  line-height: 1;
+}
+
+.writing li a:hover::before {
+  content: '❀';
+  position: absolute;
+  left: -40px;
+  top: 3px;
+  font-size: 1.5rem;
 }
 
 .content a {

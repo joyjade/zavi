@@ -26,5 +26,6 @@ columns:
         label: About
         type: textarea
       contact:
+        label: Contact Settings
         type: pages 
 

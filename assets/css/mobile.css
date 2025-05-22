@@ -11,10 +11,9 @@
 
   ul.nav {
     display: flex;
-    flex-wrap: wrap;
   }
 
-  ul.nav li {
+  ul.nav li.item {
     padding-right: 1rem;
     font-size: 1.1rem;
   }
@@ -23,6 +22,18 @@
     margin-top: -1rem;
     margin-left: 0;
     flex-basis: 100%;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-block;
+  }
+
+  .red {
+    color: var(--secondary-color);
   }
 
   .landing .feature-img {
@@ -40,6 +51,10 @@
     font-size: 1.5rem;
   }
 
+  .about, .book {
+    width: 90vw;
+  }
+
   .about .photo-col, .book .photo-col {
     max-width: 95vw;
   }
@@ -52,6 +67,10 @@
   .profile {
     max-height: unset;
     max-width: 85vw;
+  }
+
+  .book h2 {
+    padding: 1rem 0;
   }
 }
 
