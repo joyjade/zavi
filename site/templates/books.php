@@ -6,15 +6,10 @@
         <?php if($image = $book->image()): ?>
           <img class="cover" src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
         <?php endif ?>
-        <a href="<?= $book->url()?>" class="button">
-          <?= $book->link_label() ?>
-        </a>
       </div>
       <div>
-        <h2><?= $book->title() ?></h2>
-        <?= $book->summary()->kirbytext() ?>
-        <h3><?= $book->blurb_header() ?></h3>
-        <?= $book->blurb()->kirbytext() ?>
+        <a href="<?= $book-> url() ?>"><h2><?= $book->title() ?></h2></a>
+        <?= $book->summary()->excerpt(200)->kirbytext() ?>
       </div>
     </div>
   <?php endforeach ?>

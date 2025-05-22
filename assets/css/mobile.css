@@ -1,4 +1,4 @@
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 650px) {
   /* LAYOUT */
   body {
     display: flex;
@@ -11,6 +11,7 @@
 
   ul.nav {
     display: flex;
+    flex-wrap: wrap;
   }
 
   ul.nav li {
@@ -18,7 +19,50 @@
     font-size: 1.1rem;
   }
 
+  ul.nav li.subitem {
+    margin-top: -1rem;
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
   .landing .feature-img {
     max-width: 89vw;
   }
+  .landing {
+    height: 100%;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  p, .content li {
+    font-size: 1.5rem;
+  }
+
+  .about .photo-col, .book .photo-col {
+    max-width: 95vw;
+  }
+
+  .about .photo-col, .book .photo-col {
+    margin-right: 0;
+    max-width: 95vw;
+  }
+
+  .profile {
+    max-height: unset;
+    max-width: 85vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .about, .book {
+    flex-direction: column;
+  } 
+
+  .contact .field {
+    width: 100%; 
+  }
+
 }

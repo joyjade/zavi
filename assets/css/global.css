@@ -1,6 +1,6 @@
 /* GLOBAL */
 :root {
- --font-family: 'Hershey Noailles Times';
+ --font-family: 'Hershey Noailles Futura Regular';
  --nav-font: 'Hershey Noailles Futura';
  --display-font: 'Hershey Noailles';
  --primary-color: #FFF8F3;
@@ -109,7 +109,11 @@ nav li.subitem {
 }
 
 
-nav a:hover {
+a:hover, a.active {
+  color: var(--secondary-color);
+}
+
+/* nav a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 4px;
@@ -121,7 +125,7 @@ nav a.active {
   text-decoration-thickness: 1.5px;
   text-underline-offset: 4px;
   text-decoration-color:var(--secondary-color);
-}
+} */
 
 /* TYPOGRAPHY */
 
@@ -183,6 +187,10 @@ h1, h2, h3, h4, h5, h6 {
   list-style: inside;
 }
 
+.about, .research {
+  max-width: 800px;
+}
+
 .about, .book {
   display: flex;
   margin-bottom: 2rem;
@@ -190,7 +198,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about .photo-col, .book .photo-col {
   margin-right: 2.5rem;
-  max-width: 300px;
+}
+
+.book .photo-col {
+  width: 300px;
 }
 
 .photo-col img {
@@ -253,6 +264,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .writing li {
   margin-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing: 0px;
 }
 
 .content a {
@@ -260,15 +273,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing span.publisher {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
-.content a:hover .link_title, .research a:hover {
+/* .content a:hover .link_title, .research a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 4px;
   text-decoration-color: var(--secondary-color)
-}
+} */
 
 .writing h3, .book h3 {
   font-family: var(--nav-font);
@@ -304,12 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact h1 {
-  /* font-family: var(--nav-font);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 2px; */
   margin-bottom: 1rem;
-  font-style: italic;
 }
 
 .contact .field {

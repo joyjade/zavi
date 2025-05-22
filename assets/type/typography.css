@@ -27,3 +27,13 @@
     font-family: "Hershey Noailles Futura";
     src: url('./Hershey-Noailles-Futura-Triplex-Regular.otf');
 }
+
+@font-face {
+  font-family: "Hershey Noailles Futura Regular";
+  src: url('./Hershey-Noailles-Futura-Duplex-Regular.otf');
+}
+
+@font-face {
+  font-family: "Hershey Noailles Futura Light";
+  src: url('./Hershey-Noailles-Futura-Simplex-Regular.otf');
+}
