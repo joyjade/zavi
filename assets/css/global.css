@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile {
   border: var(--thin-border);
   padding: 0.5rem;
-  max-height: 300px;
+  max-height: 375px;
   /* margin-top: 1rem; */
 }
 

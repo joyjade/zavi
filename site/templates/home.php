@@ -12,7 +12,7 @@
   <?= css(['assets/css/global.css', 'assets/type/typography.css', 'assets/css/mobile.css', '@auto',]) ?>
 </head>
 
-<?php $afterpage = page('writing'); ?>
+<?php $afterpage = page('about'); ?>
 
 <body class="home_landing">
   <div class="header">

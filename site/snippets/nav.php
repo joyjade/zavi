@@ -15,7 +15,7 @@
 <body class="">
   <div class="header">
     <div class="title">
-      <a href="<?= $site->url() ?>">❀ <?= $site->title() ?></a>
+      <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
     </div>
   </div>
 
