@@ -1,14 +1,18 @@
 <?php snippet('nav') ?>
   <div class="content contact">
-        <h1><?= $page->title()->html() ?></h1>
 
-        <?php if($page->message()->isNotEmpty()): ?> 
+        <?php if($page->title()->lower() == "thanks"): 
+          $contact = $page->siblings()->listed()->first();
+          ?> 
           <div class="alert success">
-            <p><?= $page->message() ?></p>
+            <h2><?= $contact->message() ?></h2>
+        </br>
           </div>  
           <a class="crumb" href="<?= url('about/contact')?>"><span class="back-arrow">←</span> Back to form </a>
 
         <?php else: ?>  
+          <h1><?= $page->title()->html() ?></h1>
+
           <form action="https://api.web3forms.com/submit" method="POST" id="contact">
 
           <!-- Replace with your Access Key -->
