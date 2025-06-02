@@ -5,7 +5,7 @@ Title: Writing
 Poetry:
 
 - 
-  title: The Hemp Plant’s Judgment
+  title: The Hemp Plant’s Judgment help
   link: >
     https://politicalresearch.org/2021/11/12/white-skin-black-fuel
   publisher: Broccoli Magazine, Issue 11
