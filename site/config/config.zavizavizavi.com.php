@@ -3,6 +3,6 @@
 return [
   'panel' =>[
     'install' => true,
-    
+    'debug'  => false,
   ], 
 ];
