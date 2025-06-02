@@ -312,17 +312,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.writing span.publisher {
-  /* font-style: italic; */
-}
-
-/* .content a:hover .link_title, .research a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--secondary-color)
-} */
-
 .writing h3, .book h3 {
   font-family: var(--nav-font);
   text-transform: uppercase;
