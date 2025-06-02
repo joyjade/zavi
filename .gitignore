@@ -2,13 +2,13 @@
 # ------------
 
 Icon
-.DS_Store
+.DS_Store 
 
 # Temporary files
 # ---------------
 
 /media/*
-!/media/index.html
+!/media/index.html 
 
 # Lock files
 # ---------------
