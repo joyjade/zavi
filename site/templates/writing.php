@@ -2,8 +2,8 @@
 <div class="content">
 
 <?php foreach ($genres as $genre): ?>
-  <?php if($genre != "Other"): ?>
     <ul class="flex writing">
+      <?php if($page->$genre()->isNotEmpty()) :?>
       <h3><?= $genre ?></h3>
       <?php foreach(  $page->$genre() -> toStructure() as $item ): ?> 
         <li>
@@ -14,8 +14,8 @@
           </a>
         </li>
         <?php endforeach ?>
+        <?php endif ?>
     </ul>
-  <?php endif ?>
 <?php endforeach ?>
 
 <?php snippet('footer') ?>

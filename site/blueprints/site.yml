@@ -21,33 +21,32 @@ tabs:
             label: Pages
             status: listed
             info: "{{ page.slug }}"
+          drafts:
+            type: pages
+            label: Not Live
+            status: drafts
+            templates: 
+              - books
             image:
-              back: pink
+              back: green
+              color: white
               cover: true
       right:
         width: 1/3
-        sections: 
-            drafts:
-              type: pages
-              label: One day...
-              status: drafts
-              templates: 
-                - books
-              image:
-                back: green
-                color: white
-                cover: true
-  landing: 
-    label: Landing
-    icon: palette
-    sections:
-      fields: 
-        label: GIF
-        type: files
-        template: landing
-        layout: cards
-        multiple: false
-        info: "alt: {{ file.alt }}"
+        fields: 
+          landing: 
+            label: Landing
+            type: files
+            uploads: false
+            multiple: false
+            layout: cardlets
+            info: "alt: {{ file.alt }}"
+          
+
+            
+        
+
+
         
 
 

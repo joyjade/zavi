@@ -1,12 +1,17 @@
 title: Research
 icon: 📓
 
+image:
+  back: red
+  query: false
+
 options:
   changeTemplate: false
   delete: false
   duplicate: false
   move: false
 
+  
 fields:
   text:
     label: Research

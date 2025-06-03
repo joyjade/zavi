@@ -36,7 +36,13 @@ Essays:
 
 ----
 
-Other: 
+Other:
+
+- 
+  title: Tell me about it
+  link: https://www.joy-jade.com
+  publisher: Wild
+  date: Dec 2025
 
 ----
 

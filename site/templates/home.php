@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="landing">
-    <?php if($image = $site->image()): ?>
+    <?php if($image = $site->landing()->toFile()): ?>
       <a href="<?= $afterpage->url() ?>">
         <img class="feature-img" src="<?= $image->url() ?>" alt="">
         <figcaption>Enter</figcaption>

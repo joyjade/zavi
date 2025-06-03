@@ -1,6 +1,11 @@
 title: About
 icon: 🌸
 
+image:
+  back: blue
+  query: false
+
+
 options:
   changeStatus: false
   changeTemplate: false

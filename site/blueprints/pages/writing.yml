@@ -1,6 +1,10 @@
 title: Writing
 icon: 🖋
 
+image:
+  back: pink
+  query: false
+
 options: 
   changeTitle: false
   changeStatus: false
@@ -24,3 +28,5 @@ columns:
       other:   
         extends: fields/writing
         label: Other
+      info:  
+        text: The headers (e.g. Essays) will only appear if there is content in that section. 
