@@ -16,5 +16,11 @@ fields:
   text:
     label: Research
     type: textarea
+  info:  
+    text: |
+      - **Text Styles**: Use the text tool bar at the top to set styles on the text; or hard code the Markdown formatting directly. 
+      - **Image Options**: Control the size of the images with option "width:---" inserting how many pixels wide you want the photo. Add captions and alt text with same syntax. 
+      - **Preview**: Hit the left-most button at the top-right to Preview the page before pressing Save to view your changes. 
+    label: ''
       
 

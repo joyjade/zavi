@@ -16,7 +16,7 @@ I should include some instructions... See more of her work at (link: https://mus
 
 (image: fleurgirl.png width:200 caption: this is a caption an invite for jessee's bday long ago)
 
-(image: degrow.png width: 500 caption: I enabled diff sized images and a lot of other custom things for images)
+(image: degrow.png width:500 caption: I enabled diff sized images and a lot of other custom things for images)
 
 ----
 
