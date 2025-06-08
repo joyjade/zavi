@@ -23,7 +23,7 @@
   <div class="landing">
     <?php if($image = $site->landing()->toFile()): ?>
       <a href="<?= $afterpage->url() ?>">
-        <img class="feature-img" src="<?= $image->url() ?>" alt="">
+        <img class="feature-img" src="<?= $image->url() ?>" alt="<?= $image->alt() ?> | Credit: <?= $image->credit() ?>">
         <figcaption>Enter</figcaption>
       </a>
     <?php endif ?>

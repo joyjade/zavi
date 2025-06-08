@@ -41,6 +41,7 @@ tabs:
             multiple: false
             layout: cardlets
             info: "alt: {{ file.alt }}"
+            template: landing
           
 
             

@@ -10,7 +10,7 @@ Previously, she investigated far-right responses to the climate crisis.
 
 - “(link: https://chicagoreader.com/news/majority-of-cps-schools-shuttered-in-2013-are-still-vacant/ text: White Skin, Black Fuel: Author Q&A with Andreas Malm)” - *Political Research Associates* (2021)
 
-(image: degrow.png width: 350 link:about/contact )
+(image: degrow.png width: 350 link:about/contact alt:this is an alt text)
 
 I should include some instructions... See more of her work at (link: https://muse.jhu.edu/ text: Project Muse), and (link: https://www.are.na/editorial text: are.na)
 
