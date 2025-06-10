@@ -5,7 +5,7 @@
           $contact = $page->siblings()->listed()->first();
           ?> 
           <div class="alert success">
-            <h2><?= $contact->message() ?></h2>
+            <h2><?= $contact->success() ?></h2>
         </br>
           </div>  
           <a class="crumb" href="<?= url('about/contact')?>"><span class="back-arrow">←</span> Back to form </a>

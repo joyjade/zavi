@@ -10,11 +10,7 @@ Subject: Website Contact
 
 ----
 
-Success: Thanks so much for reaching out!
-
-----
-
-Message: Thank you for reaching out! I will get back to you when I can.
+Success: Thanks so much for reaching out! I will reach out soon.
 
 ----
 
