@@ -22,12 +22,12 @@ columns:
       poetry: 
         extends: fields/writing
         label: Poetry
-      essays:   
+      prose:   
         extends: fields/writing
-        label: Essays
+        label: Prose
       other:   
         extends: fields/writing
         label: Other
       info:  
-        text: The headers (e.g. Essays) will only appear if there is content in that section. 
+        text: The headers (e.g. Prose) will only appear if there is content in that section. 
         label: ''

@@ -12,7 +12,7 @@ Poetry:
 
 ----
 
-Essays:
+Prose:
 
 - 
   title: Growing Together, Growing Apart

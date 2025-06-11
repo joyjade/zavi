@@ -2,7 +2,7 @@
 return function () {
     $genres = [
         'Poetry',
-        'Essays',
+        'Prose',
         'Other'
     ];
     return [
