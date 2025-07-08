@@ -26,6 +26,12 @@ Prose:
     https://therumpus.net/2019/04/25/my-mothers-tongue/
   publisher: The Rumpus
   date: "2019"
+- 
+  title: "The Hemp Plant's Judgment"
+  link: >
+    https://broccolimag.com/collections/books/products/once-upon-a-high-time-weedy-fairy-tales?variant=43498755686657
+  publisher: Broccoli Magazine
+  date: "2021"
 
 ----
 
@@ -42,12 +48,6 @@ Other:
   link: >
     https://politicalresearch.org/2021/11/12/white-skin-black-fuel
   publisher: Political Research Associates
-  date: "2021"
-- 
-  title: "The Hemp Plant's Judgment"
-  link: >
-    https://broccolimag.com/collections/books/products/once-upon-a-high-time-weedy-fairy-tales?variant=43498755686657
-  publisher: Broccoli Magazine
   date: "2021"
 
 ----
